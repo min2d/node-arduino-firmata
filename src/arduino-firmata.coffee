@@ -1,7 +1,7 @@
 'use strict'
 
 events = require 'eventemitter2'
-{SerialPort} = serialport = require 'serialport'
+SerialPort = serialport = require 'serialport'
 
 debug = require('debug')('arduino-firmata')
 
@@ -42,6 +42,7 @@ exports = module.exports = class ArduinoFirmata extends events.EventEmitter2
       callback null, devices
 
   constructor: ->
+    super()
     @status = ArduinoFirmata.Status.CLOSE
     @wait_for_data = 0
     @execute_multi_byte_command = 0

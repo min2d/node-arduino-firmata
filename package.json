@@ -10,17 +10,16 @@
     "watch": "grunt"
   },
   "devDependencies": {
-    "coffee-errors": "*",
-    "coffee-script": "^1.8",
     "async": "*",
-    "mocha": "*",
+    "coffeescript": "^2.4.1",
     "grunt": "*",
     "grunt-cli": "*",
-    "grunt-simple-mocha": "*",
-    "grunt-notify": "*",
-    "grunt-contrib-coffee": "*",
     "grunt-coffeelint": "*",
+    "grunt-contrib-coffee": "*",
     "grunt-contrib-watch": "*",
+    "grunt-notify": "*",
+    "grunt-simple-mocha": "*",
+    "mocha": "*",
     "socket.io": "*"
   },
   "keywords": [
@@ -30,9 +29,9 @@
   "author": "Sho Hashimoto <hashimoto@shokai.org>",
   "license": "MIT",
   "dependencies": {
-    "serialport": "*",
+    "debug": "*",
     "eventemitter2": "*",
-    "debug": "*"
+    "serialport": "*"
   },
   "directories": {
     "test": "tests"
